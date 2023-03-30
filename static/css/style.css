@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Sono:wght@300&display=swap');
+
+/* Navbar */
+.navbar {
+    background-color: #4CAF50;
+    border-bottom: 2px solid #f8f9fa;
+}
+.brand {
+    font-family: 'Climate Crisis', cursive;
+    -webkit-text-stroke:0.5px #f8f9fa;
+    font-size: 2.5rem;
+}
+
+.navbar-nav {
+    font-family: 'Sono', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+/* Text Section Index */
+.mask {
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: linear-gradient(to top, rgba(246, 249, 250, 0.5), rgba(76, 175, 80, 0.2)),url(https://images.pexels.com/photos/3434523/pexels-photo-3434523.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+.main_text h1{
+    font-family: 'Climate Crisis', cursive;
+    -webkit-text-stroke:0.3px #f8f9fa;
+    font-size: 2.5rem;
+}
+
+.main_text p {
+    font-family: 'Sono', sans-serif;
+    font-size: larger;
+    font-size: 1.25rem;
+    color: #f8f9fa;
+
+}
+/* Footer */
+.footer {
+    background-color: #4CAF50;
+}
+
+.copyright {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid #f8f9fa;
+}
