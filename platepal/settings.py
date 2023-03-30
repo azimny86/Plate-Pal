@@ -43,8 +43,17 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary_storage',
     'cloudinary',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'platepal_app',
 ]
+
+SITE_ID = 1
+LOGIN_REDIRECT_IRL = '/'
+LOGOUT_REDIRECT_IRL = '/'
+CCOUNT_EMAIL_VERIFICATION = 'none'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

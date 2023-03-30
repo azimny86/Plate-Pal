@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load account socialaccount %}
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+{% block content %}
+<div class="vh-100 bg-image login">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2>{% trans "Sign In" %}:</h1>
+                <p>{% blocktrans %}Welcome to Plate-Pal, a place where you can find new ideas for dishes, you can also,
+                  after registering commenters, like the recipes of other users. If you haven't registered on our site
+                  yet
+                  <a class="login-signup" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
+                </p>
+                <form class="login" method="POST" action="{% url 'account_login' %}">
+                  {% csrf_token %}
+                  {{ form.as_p }}
+                  {% if redirect_field_value %}
+                  <div class="form-outline mb-4">
+                    <input class="form-control form-control-lg" type="hidden" name="{{ redirect_field_name }}"
+                      value="{{ redirect_field_value }}" />
+                  </div>
+                  {% endif %}
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"type="submit">{% trans "Sign In" %}</button>
+                  </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

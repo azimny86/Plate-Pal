@@ -39,6 +39,48 @@
     color: #f8f9fa;
 
 }
+
+/* Login */
+.login h2 {
+    font-family: 'Climate Crisis', cursive;
+    font-size: 2.8rem;
+    text-align: center;
+    letter-spacing: 10px;
+}
+.login p {
+    font-family: 'Sono', sans-serif;
+    font-size: larger;
+    font-size: 1rem;
+}
+.card {
+    border-radius: 25px;
+    background-color: #4CAF50;
+}
+.login-signup{
+    color: black;
+}
+/* Registration */
+
+.signup {
+
+ }
+.signup h2 {
+    font-family: 'Climate Crisis', cursive;
+    font-size: 2.8rem;
+    text-align: center;
+    letter-spacing: 10px;
+}
+.signup form {
+    font-family: 'Sono', sans-serif;
+    font-size: larger;
+    font-size: 1rem;
+}
+.signup button {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
 /* Footer */
 .footer {
     background-color: #4CAF50;
